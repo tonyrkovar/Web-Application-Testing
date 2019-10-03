@@ -30,20 +30,20 @@ export const Dashboard = () => {
         <div className='dashboard-container'>
             <Display strike={strike} ball={ball} foul={foul} />
             <section className='buttons'>
-                <button className='display-button'
+                <button data-testid='strikes' className='display-button'
                     onClick={handleStrikes}>
                     Strike
                     </button>
-                <button className='display-button'
+                <button data-testid='balls' className='display-button'
                     onClick={handleBall}>
                     Ball
                     </button>
-                <button className='display-button'
+                <button data-testid='fouls' className='display-button'
                     onClick={foulClick}
                 >
                     Foul
                     </button>
-                <button className='display-button'
+                <button data-testid='hit' className='display-button'
                     onClick={() => {
                         setStrike(0);
                         setBall(0);
