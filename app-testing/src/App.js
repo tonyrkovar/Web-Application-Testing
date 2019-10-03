@@ -7,7 +7,7 @@ import { Dashboard } from './components/Dashboard';
 function App() {
   return (
     <div className="App">
-      <Display />
+      {/* <Display /> */}
       <Dashboard />
     </div>
   );
